@@ -81,7 +81,7 @@ aws configure  # Provide credentials
 
 eksctl create cluster \
   --name ecommerce-cluster \
-  --region us-east-1 \
+  --region ap-south-1 \
   --nodegroup-name ecommerce-nodes \
   --node-type t3.medium \
   --nodes 2 \
@@ -116,8 +116,8 @@ pipeline {
     agent any  // Run this pipeline on any available Jenkins agent (node)
 
     environment {
-        DOCKER_IMAGE = 'vaibhav126/my-app'     // Docker image name to build and push
-        AWS_REGION = 'us-east-1'               // AWS region where EKS cluster is hosted
+        DOCKER_IMAGE = 'chetankoshti528/cicd'     // Docker image name to build and push
+        AWS_REGION = 'ap-south-1'               // AWS region where EKS cluster is hosted
         CLUSTER_NAME = 'ecommerce-cluster'     // Name of your EKS cluster
     }
 
