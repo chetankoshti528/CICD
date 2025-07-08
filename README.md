@@ -80,7 +80,7 @@ Use `eksctl` to provision an EKS cluster automatically with worker nodes for dep
 aws configure  # Provide credentials
 
 eksctl create cluster \
-  --name ecommerce-cluster \
+  --name my1-cluster \
   --region ap-south-1 \
   --nodegroup-name ecommerce-nodes \
   --node-type t3.medium \
