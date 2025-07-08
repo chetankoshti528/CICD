@@ -118,7 +118,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'chetankoshti528/cicd'     // Docker image name to build and push
         AWS_REGION = 'ap-south-1'               // AWS region where EKS cluster is hosted
-        CLUSTER_NAME = 'ecommerce-cluster'     // Name of your EKS cluster
+        CLUSTER_NAME = 'my-cluster'     // Name of your EKS cluster
     }
 
     stages {
