@@ -80,7 +80,7 @@ Use `eksctl` to provision an EKS cluster automatically with worker nodes for dep
 aws configure  # Provide credentials
 
 eksctl create cluster \
-  --name my1-cluster \
+  --name my2-cluster \
   --region ap-south-1 \
   --nodegroup-name ecommerce-nodes \
   --node-type t3.medium \
@@ -118,7 +118,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'chetankoshti528/cicd'     // Docker image name to build and push
         AWS_REGION = 'ap-south-1'               // AWS region where EKS cluster is hosted
-        CLUSTER_NAME = 'my-cluster'     // Name of your EKS cluster
+        CLUSTER_NAME = 'my2-cluster'     // Name of your EKS cluster
     }
 
     stages {
