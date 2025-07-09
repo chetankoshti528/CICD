@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'chetankoshti528/cicd'
         AWS_REGION = 'ap-south-1'
-        CLUSTER_NAME = 'my1-cluster'
+        CLUSTER_NAME = 'my2-cluster'
     }
 
     stages {
